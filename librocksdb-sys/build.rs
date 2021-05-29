@@ -114,6 +114,10 @@ fn build_rocksdb() {
         }
     }
 
+    if cfg!(feature = "portable") {
+        config.define("PORTABLE", Some("ON"));
+    }
+
     if target.contains("aarch64") {
         lib_sources.push("util/crc32c_arm64.cc")
     }

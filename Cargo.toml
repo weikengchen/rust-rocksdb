@@ -25,6 +25,7 @@ zstd = ["librocksdb-sys/zstd"]
 zlib = ["librocksdb-sys/zlib"]
 bzip2 = ["librocksdb-sys/bzip2"]
 multi-threaded-cf = []
+portable = ["librocksdb-sys/portable"]
 
 [dependencies]
 libc = "0.2"

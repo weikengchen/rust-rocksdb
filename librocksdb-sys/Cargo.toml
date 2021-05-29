@@ -19,6 +19,7 @@ lz4 = []
 zstd = []
 zlib = []
 bzip2 = []
+portable = []
 
 [dependencies]
 libc = "0.2"
